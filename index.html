@@ -65,7 +65,7 @@
 
             <button class="btn btn-primary"><a target=”_blank” href="https://www.fiverr.com/s/NNpNZGZ"
                     style="color: white; font-weight: bold">Hire Me</a></button>
-
+            <button id="downloadBtn" class="btn btn-primary">Download Resume</button>
         </div>
     </header><!-- end of page header -->
 
@@ -512,6 +512,21 @@
 
     <!-- Meyawo js -->
     <script src="assets/js/meyawo.js"></script>
+
+    <script>
+        // Function to download the PDF
+        function downloadPDF() {
+            const link = document.createElement('a');
+            link.href = 'assets/files/Mustahid_Resume.pdf'; // Replace with your actual PDF file path
+            link.download = 'mustahid_resume.pdf'; // The name the file will be downloaded as
+            document.body.appendChild(link); // Append the link to the body
+            link.click(); // Trigger the download
+            document.body.removeChild(link); // Remove the link after download
+        }
+
+        // Add event listener to the button
+        document.getElementById('downloadBtn').addEventListener('click', downloadPDF);
+    </script>
 
 </body>
 
