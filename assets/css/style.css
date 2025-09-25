@@ -11,7 +11,7 @@ h1, h2, h3, h4, h5 {
 }
 
 section {
-  scroll-margin-top: 70px; /* offset for fixed navbar */
+  scroll-margin-top: 70px;
 }
 
 /* === NAVBAR === */
@@ -73,7 +73,7 @@ header .btn {
   min-width: 150px;
 }
 
-/* About Card */
+/* === ABOUT CARD === */
 .about-card {
   background: linear-gradient(135deg, #fef9e7, #fff7d6);
   border-radius: 16px;
@@ -104,14 +104,17 @@ header .btn {
   font-weight: 600;
 }
 
-
-/* Projects Horizontal Slider */
+/* === PROJECTS HORIZONTAL SLIDER === */
 .projects-slider {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
   scroll-behavior: smooth;
+  padding-bottom: 10px;
 }
 
 .project-card {
-  min-width: 280px; /* Minimum width per card */
+  min-width: 280px;
   max-width: 300px;
   background: #fff;
   border-radius: 16px;
@@ -156,125 +159,79 @@ header .btn {
   color: #10b981;
 }
 
-/* Scrollbar hidden for modern look */
-.projects-slider::-webkit-scrollbar {
-  display: none;
-}
-.projects-slider {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-}
-
+/* Hide scrollbar */
+.projects-slider::-webkit-scrollbar { display: none; }
+.projects-slider { -ms-overflow-style: none; scrollbar-width: none; }
 
 /* === SKILLS === */
-#skills .progress {
-  height: 22px;
-  background-color: #e2e8f0;
-  border-radius: 12px;
-  overflow: hidden;
+#skills {
+  background-color: #f8fafc;
 }
 
-#skills .progress-bar {
-  font-weight: 600;
-  font-size: 0.85rem;
-  line-height: 22px;
-}
-
-/* === EXPERIENCE === */
-#experience {
-  background: #f1f5f9;
-}
-
-.timeline li {
-  border-left: 3px solid #198754;
-  padding-left: 15px;
-  position: relative;
-}
-
-.timeline li::before {
-  content: "";
-  width: 14px;
-  height: 14px;
-  background: #198754;
-  border-radius: 50%;
-  position: absolute;
-  left: -8px;
-  top: 5px;
-}
-
-/* === CONTACT === */
-#contact .card {
-  border-radius: 12px;
-  background: #fff;
-  height: 100%;
-}
-
-#contact h5 {
+#skills h2 {
   font-weight: 700;
 }
 
-#contact .form-control {
-  border-radius: 10px;
-  border: 1px solid #cbd5e1;
+.skill {
+  margin-bottom: 20px;
 }
 
-#contact .btn {
-  border-radius: 8px;
+.skill .progress {
+  height: 25px;
+  background-color: #e2e8f0;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.skill .progress-bar {
   font-weight: 600;
-}
-
-#contact p {
-  font-size: 1rem;
+  font-size: 0.85rem;
+  border-radius: 20px;
+  transition: width 1.5s ease-in-out;
   display: flex;
+  justify-content: flex-end;
   align-items: center;
+  padding-right: 10px;
+  color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  height: 25px;
+  width: 0; /* Start at 0 for animation */
 }
 
-#contact i {
-  font-size: 1.2rem;
-}
+/* Gradient colors */
+.bg-gradient-success { background: linear-gradient(90deg, #10b981, #34d399); }
+.bg-gradient-info    { background: linear-gradient(90deg, #0ea5e9, #38bdf8); }
+.bg-gradient-warning { background: linear-gradient(90deg, #f59e0b, #fcd34d); }
+.bg-gradient-primary { background: linear-gradient(90deg, #3b82f6, #60a5fa); }
+.bg-gradient-danger  { background: linear-gradient(90deg, #ef4444, #f87171); }
 
-#contact .social-link {
-  color: #1e293b;
-  transition: transform 0.3s, color 0.3s;
-}
 
-#contact .social-link:hover {
-  transform: translateY(-4px);
-  color: #10b981;
-}
+/* === EXPERIENCE === */
+#experience { background: #f1f5f9; }
+.timeline li { border-left: 3px solid #198754; padding-left: 15px; position: relative; }
+.timeline li::before { content: ""; width: 14px; height: 14px; background: #198754; border-radius: 50%; position: absolute; left: -8px; top: 5px; }
+
+/* === CONTACT === */
+#contact .card { border-radius: 12px; background: #fff; height: 100%; }
+#contact h5 { font-weight: 700; }
+#contact .form-control { border-radius: 10px; border: 1px solid #cbd5e1; }
+#contact .btn { border-radius: 8px; font-weight: 600; }
+#contact p { font-size: 1rem; display: flex; align-items: center; }
+#contact i { font-size: 1.2rem; }
+#contact .social-link { color: #1e293b; transition: transform 0.3s, color 0.3s; }
+#contact .social-link:hover { transform: translateY(-4px); color: #10b981; }
 
 /* === FOOTER === */
-footer {
-  background: #0f172a;
-}
-
-footer small {
-  color: #94a3b8;
-}
+footer { background: #0f172a; }
+footer small { color: #94a3b8; }
 
 /* === UTILITIES === */
-.bg-dark {
-  background-color: #0f172a !important;
-}
-
-.btn-success {
-  background-color: #10b981;
-  border: none;
-}
-
-.btn-success:hover {
-  background-color: #059669;
-}
-
-.btn-outline-light {
-  border-color: #f8fafc;
-  color: #f8fafc;
-}
-
-.btn-outline-light:hover {
-  background-color: #f8fafc;
-  color: #0f172a;
-}
+.bg-dark { background-color: #0f172a !important; }
+.btn-success { background-color: #10b981; border: none; }
+.btn-success:hover { background-color: #059669; }
+.btn-outline-light { border-color: #f8fafc; color: #f8fafc; }
+.btn-outline-light:hover { background-color: #f8fafc; color: #0f172a; }
 
 /* Back to Top Button */
 #backToTopBtn {
@@ -282,7 +239,7 @@ footer small {
   bottom: 30px;
   right: 30px;
   z-index: 100;
-  background-color: #FFD700; /* Yellow color */
+  background-color: #FFD700;
   color: #000;
   border: none;
   outline: none;
@@ -292,11 +249,8 @@ footer small {
   font-size: 24px;
   cursor: pointer;
   box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-  display: none; /* Hidden by default */
+  display: none;
   transition: opacity 0.3s, transform 0.3s;
 }
 
-#backToTopBtn:hover {
-  background-color: #FFC107; /* Darker yellow on hover */
-  transform: translateY(-3px);
-}
+#backToTopBtn:hover { background-color: #FFC107; transform: translateY(-3px); }

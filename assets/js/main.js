@@ -1,20 +1,19 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-  // === Animate Skill Bars on Scroll ===
-  const progressBars = document.querySelectorAll(".progress-bar");
+  // Animate skill bars on scroll
+  const skills = document.querySelectorAll("#skills .skill");
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        // Animate the width to the value already set in inline style
-        entry.target.style.width = entry.target.getAttribute("style").split(":")[1];
+        const progressBar = entry.target.querySelector(".progress-bar");
+        const value = progressBar.textContent.trim();
+        progressBar.style.width = value; // Animate width
         observer.unobserve(entry.target);
       }
     });
   }, { threshold: 0.5 });
 
-  progressBars.forEach(bar => observer.observe(bar));
-
-
+  skills.forEach(skill => observer.observe(skill));
   // === Send Message via Mailto ===
   const sendBtn = document.getElementById("sendBtn");
   if (sendBtn) {
@@ -24,36 +23,22 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-
   // === Back to Top Button ===
   const backToTopBtn = document.getElementById("backToTopBtn");
-
   window.addEventListener("scroll", () => {
-    if (window.scrollY > 200) {
-      backToTopBtn.style.display = "block";
-    } else {
-      backToTopBtn.style.display = "none";
-    }
+    backToTopBtn.style.display = window.scrollY > 200 ? "block" : "none";
   });
-
   backToTopBtn.addEventListener("click", () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
 
-
-  // === Projects Horizontal Slider Buttons ===
+  // === Projects Slider Buttons ===
   const slider = document.querySelector('.projects-slider');
   const nextBtn = document.getElementById('nextBtn');
   const prevBtn = document.getElementById('prevBtn');
-
   if (slider && nextBtn && prevBtn) {
-    nextBtn.addEventListener('click', () => {
-      slider.scrollBy({ left: 320, behavior: 'smooth' });
-    });
-
-    prevBtn.addEventListener('click', () => {
-      slider.scrollBy({ left: -320, behavior: 'smooth' });
-    });
+    nextBtn.addEventListener('click', () => { slider.scrollBy({ left: 320, behavior: 'smooth' }); });
+    prevBtn.addEventListener('click', () => { slider.scrollBy({ left: -320, behavior: 'smooth' }); });
   }
 
 });
