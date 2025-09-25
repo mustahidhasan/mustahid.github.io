@@ -238,43 +238,46 @@
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="py-5">
+<section id="contact" class="py-5 bg-light">
   <div class="container">
-    <h2 class="mb-4 text-center">Contact</h2>
-    <div class="row g-4">
-      
+    <h2 class="mb-5 text-center fw-bold">Contact Me</h2>
+    <div class="row g-4 align-items-stretch">
+
       <!-- Contact Form -->
       <div class="col-md-6">
-        <div class="card shadow-sm p-4 h-100">
+        <div class="card shadow-lg p-5 h-100 border-0">
           <form>
-            <div class="mb-3">
-              <label class="form-label fw-semibold">Message</label>
-              <textarea id="message" rows="5" class="form-control"></textarea>
+            <div class="mb-4">
+              <label for="message" class="form-label fw-semibold">Your Message</label>
+              <textarea id="message" rows="6" class="form-control form-control-lg" placeholder="Write your message..."></textarea>
             </div>
-            <button id="sendBtn" type="button" class="btn btn-success w-100">Send Message</button>
+            <button id="sendBtn" type="button" class="btn btn-success btn-lg w-100">
+              Send Message
+            </button>
           </form>
         </div>
       </div>
 
       <!-- Contact Info -->
       <div class="col-md-6">
-        <div class="card shadow-sm p-4 h-100 d-flex flex-column justify-content-center align-items-start">
-          <h5 class="mb-3">Get in Touch</h5>
-          <p class="mb-3">
-            <i class="fas fa-envelope me-2 text-success"></i>
-            <a href="mailto:mustahidhasan9@gmail.com" class="text-decoration-none text-dark">
-              mustahidhasan9@gmail.com
-            </a>
-          </p>
-          <div class="d-flex gap-4 mt-2">
-            <a href="https://github.com/mustahidhasan" target="_blank" class="social-link">
+        <div class="card shadow-lg p-5 h-100 border-0 d-flex flex-column justify-content-center align-items-start">
+          <h5 class="mb-4">Get in Touch</h5>
+
+          <!-- Email -->
+          <a href="mailto:mustahidhasan9@gmail.com" class="contact-item mb-3">
+            <div class="icon bg-success text-white rounded-circle d-flex align-items-center justify-content-center">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <span class="contact-text">mustahidhasan9@gmail.com</span>
+          </a>
+
+          <!-- Social Links -->
+          <div class="d-flex gap-3 mt-4">
+            <a href="https://github.com/mustahidhasan" target="_blank" class="social-link modern">
               <i class="fab fa-github fa-2x"></i>
             </a>
-            <a href="https://linkedin.com/in/mustahid-hasan-8800851a9" target="_blank" class="social-link">
+            <a href="https://linkedin.com/in/mustahid-hasan-8800851a9" target="_blank" class="social-link modern">
               <i class="fab fa-linkedin fa-2x"></i>
-            </a>
-            <a href="https://scholar.google.com/citations?user=XXXX" target="_blank" class="social-link">
-              <i class="fas fa-graduation-cap fa-2x"></i>
             </a>
           </div>
         </div>
