@@ -157,10 +157,11 @@ header .btn {
 #contact .card {
   border-radius: 12px;
   background: #fff;
-  height: 100%;               /* ensure equal height */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  height: 100%;
+}
+
+#contact h5 {
+  font-weight: 700;
 }
 
 #contact .form-control {
@@ -171,6 +172,16 @@ header .btn {
 #contact .btn {
   border-radius: 8px;
   font-weight: 600;
+}
+
+#contact p {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+#contact i {
+  font-size: 1.2rem;
 }
 
 #contact .social-link {
