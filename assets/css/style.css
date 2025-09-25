@@ -1,0 +1,14 @@
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+header img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.timeline li {
+  border-left: 3px solid #198754;
+  padding-left: 15px;
+}
