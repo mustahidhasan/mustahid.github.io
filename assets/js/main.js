@@ -1,5 +1,5 @@
-// Animate skill bars on scroll
 document.addEventListener("DOMContentLoaded", () => {
+  // Animate skill bars on scroll
   const progressBars = document.querySelectorAll(".progress-bar");
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
@@ -20,4 +20,24 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = `mailto:mustahidhasan9@gmail.com?subject=Portfolio Inquiry&body=${encodeURIComponent(msg)}`;
     });
   }
+
+  // Back to Top Button
+  const backToTopBtn = document.getElementById("backToTopBtn");
+
+  // Show button when user scrolls down 200px
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 200) {
+      backToTopBtn.style.display = "block";
+    } else {
+      backToTopBtn.style.display = "none";
+    }
+  });
+
+  // Smooth scroll to top
+  backToTopBtn.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
 });
