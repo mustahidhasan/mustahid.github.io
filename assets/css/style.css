@@ -90,10 +90,9 @@ header .btn {
 
 .carousel-item img {
   border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
-  height: 350px;              /* fixed height */
-  object-fit: cover;          /* crop nicely */
-  width: 100%;                /* always full width */
+  height: 350px;
+  width: 100%;
+  object-fit: contain;   /* ✅ show full image */
 }
 
 .carousel-item h4 {
