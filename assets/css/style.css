@@ -73,11 +73,37 @@ header .btn {
   min-width: 150px;
 }
 
-/* === ABOUT === */
-#about p {
-  font-size: 1.05rem;
-  line-height: 1.6;
+/* About Card */
+.about-card {
+  background: linear-gradient(135deg, #fef9e7, #fff7d6);
+  border-radius: 16px;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
+
+.about-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+}
+
+.about-card .card-title {
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.about-card .card-subtitle {
+  font-weight: 600;
+}
+
+.about-card .card-text {
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.about-card .btn {
+  border-radius: 8px;
+  font-weight: 600;
+}
+
 
 /* === PROJECTS === */
 #projects {
