@@ -1,9 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Animate skill bars on scroll
+
+  // === Animate Skill Bars on Scroll ===
   const progressBars = document.querySelectorAll(".progress-bar");
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
+        // Animate the width to the value already set in inline style
         entry.target.style.width = entry.target.getAttribute("style").split(":")[1];
         observer.unobserve(entry.target);
       }
@@ -12,7 +14,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   progressBars.forEach(bar => observer.observe(bar));
 
-  // Send message button
+
+  // === Send Message via Mailto ===
   const sendBtn = document.getElementById("sendBtn");
   if (sendBtn) {
     sendBtn.addEventListener("click", () => {
@@ -21,10 +24,10 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Back to Top Button
+
+  // === Back to Top Button ===
   const backToTopBtn = document.getElementById("backToTopBtn");
 
-  // Show button when user scrolls down 200px
   window.addEventListener("scroll", () => {
     if (window.scrollY > 200) {
       backToTopBtn.style.display = "block";
@@ -33,11 +36,24 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // Smooth scroll to top
   backToTopBtn.addEventListener("click", () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"
-    });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   });
+
+
+  // === Projects Horizontal Slider Buttons ===
+  const slider = document.querySelector('.projects-slider');
+  const nextBtn = document.getElementById('nextBtn');
+  const prevBtn = document.getElementById('prevBtn');
+
+  if (slider && nextBtn && prevBtn) {
+    nextBtn.addEventListener('click', () => {
+      slider.scrollBy({ left: 320, behavior: 'smooth' });
+    });
+
+    prevBtn.addEventListener('click', () => {
+      slider.scrollBy({ left: -320, behavior: 'smooth' });
+    });
+  }
+
 });

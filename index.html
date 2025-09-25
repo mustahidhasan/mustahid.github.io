@@ -79,78 +79,74 @@
   </div>
 </section>
 
-<!-- PROJECTS -->
 <section id="projects" class="bg-light py-5">
   <div class="container">
-    <h2 class="mb-4 text-center">Projects</h2>
-    <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+    <h2 class="mb-5 text-center">Projects</h2>
+    
+    <!-- Horizontal Scroll Wrapper -->
+    <div class="projects-slider d-flex overflow-auto gap-4 pb-2">
 
-      <div class="carousel-inner">
-
-        <!-- Jira Automation -->
-        <div class="carousel-item active text-center">
-          <img src="assets/imgs/automation.jpg" class="d-block mx-auto rounded mb-3" alt="Jira Automation">
+      <!-- Jira Automation -->
+      <div class="project-card flex-shrink-0 shadow-sm">
+        <img src="assets/imgs/automation.jpg" alt="Jira Automation" class="project-img">
+        <div class="project-body">
           <h4>Jira Automation</h4>
-          <p class="text-muted">
-            Created an end-to-end system to automate Jira project management via Google Sheets. Included issue creation, updates, sprint assignments, error handling, and Markdown-to-Jira formatting. Integrated Gemini AI for JP→EN translations, streamlining cross-team project coordination and reducing manual effort.
-          </p>
-          <p><strong>Skills:</strong> Google Apps Script · Jira API · Gemini AI · Automation · Workflow Management</p>
+          <p>End-to-end Jira automation via Google Sheets. Gemini AI translation integration for JP→EN, sprint assignments, issue updates, and error handling.</p>
+          <p><strong>Skills:</strong> Google Apps Script · Jira API · Gemini AI · Automation</p>
         </div>
-
-        <!-- Competitors Ads Analysis AI -->
-        <div class="carousel-item text-center">
-          <img src="assets/imgs/analysis.jpg" class="d-block mx-auto rounded mb-3" alt="Competitors Ads Analysis AI">
-          <h4>Competitors Ads Analysis AI</h4>
-          <p class="text-muted">
-            Developed a comprehensive AI-driven platform to monitor and analyze competitor ads across digital channels. Automated scraping with Selenium/Django, applied AI/NLP to extract key metrics (ad spend, campaign classification), and built interactive React dashboards with PDF export.
-          </p>
-          <p><strong>Skills:</strong> Python · Django REST Framework · Selenium · ReactJS · AI/NLP</p>
-        </div>
-
-        <!-- Network Management System -->
-        <div class="carousel-item text-center">
-          <img src="assets/imgs/network.jpg" class="d-block mx-auto rounded mb-3" alt="Network Management System">
-          <h4>Network Management System (NMS)</h4>
-          <p class="text-muted">
-            Built a full-featured NMS supporting Ping, DNS Lookup, SNMP, Traceroute, MTR with multi-IP support. Added CSV downloads, email notifications, async execution, SSO (Azure), user session tracking, and admin dashboards with responsive React UI.
-          </p>
-          <p><strong>Skills:</strong> Python · ReactJS · AWS · Automation · Async Programming & OOP Optimization</p>
-        </div>
-
-        <!-- Document Processor -->
-        <div class="carousel-item text-center">
-          <img src="assets/imgs/document.jpg" class="d-block mx-auto rounded mb-3" alt="Document Processor">
-          <h4>Document Processor</h4>
-          <p class="text-muted">
-            Developed a document processing app to upload, split, and manage PDFs. Highlighted partially processed docs, auto-removed completed ones, supported merging, timezone adjustments, logging, and smooth production deployment.
-          </p>
-          <p><strong>Skills:</strong> Python · Django REST Framework · JavaScript · PDF Libraries</p>
-        </div>
-
-        <!-- Brandcloud AI -->
-        <div class="carousel-item text-center">
-          <img src="assets/imgs/ai.jpg" class="d-block mx-auto rounded mb-3" alt="Brandcloud AI">
-          <h4>Brandcloud AI</h4>
-          <p class="text-muted">
-            Led the development of a scalable automation framework for web data collection. Built backend APIs, deployed with Docker, implemented robust testing, and mentored the Bangladesh team as a sub-instructor to improve workflows.
-          </p>
-          <p><strong>Skills:</strong> Python · Selenium · AWS · Docker · Django REST Framework</p>
-        </div>
-
       </div>
 
-      <!-- Bullet Indicators -->
-      <div class="carousel-indicators position-static mt-3">
-        <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="0" class="active rounded-circle" aria-current="true"></button>
-        <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="1" class="rounded-circle"></button>
-        <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="2" class="rounded-circle"></button>
-        <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="3" class="rounded-circle"></button>
-        <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="4" class="rounded-circle"></button>
+      <!-- Competitors Ads Analysis AI -->
+      <div class="project-card flex-shrink-0 shadow-sm">
+        <img src="assets/imgs/analysis.jpg" alt="Competitors Ads Analysis AI" class="project-img">
+        <div class="project-body">
+          <h4>Competitors Ads Analysis AI</h4>
+          <p>AI-driven competitor ads analysis platform. Selenium scraping, AI/NLP metrics extraction, React dashboards with PDF export.</p>
+          <p><strong>Skills:</strong> Python · Django · Selenium · ReactJS · AI/NLP</p>
+        </div>
+      </div>
+
+      <!-- Network Management System -->
+      <div class="project-card flex-shrink-0 shadow-sm">
+        <img src="assets/imgs/network.jpg" alt="Network Management System" class="project-img">
+        <div class="project-body">
+          <h4>Network Management System</h4>
+          <p>NMS with Ping, DNS, SNMP, Traceroute, async execution, SSO (Azure), CSV downloads, and responsive React UI.</p>
+          <p><strong>Skills:</strong> Python · ReactJS · AWS · Automation</p>
+        </div>
+      </div>
+
+      <!-- Document Processor -->
+      <div class="project-card flex-shrink-0 shadow-sm">
+        <img src="assets/imgs/document.jpg" alt="Document Processor" class="project-img">
+        <div class="project-body">
+          <h4>Document Processor</h4>
+          <p>PDF upload, split, merge, timezone adjustments, logging, and production-ready deployment automation.</p>
+          <p><strong>Skills:</strong> Python · Django · JavaScript · PDF Libraries</p>
+        </div>
+      </div>
+
+      <!-- Brandcloud AI -->
+      <div class="project-card flex-shrink-0 shadow-sm">
+        <img src="assets/imgs/ai.jpg" alt="Brandcloud AI" class="project-img">
+        <div class="project-body">
+          <h4>Brandcloud AI</h4>
+          <p>Scalable automation for web data collection, backend APIs, Docker deployment, testing, and team mentorship.</p>
+          <p><strong>Skills:</strong> Python · Selenium · AWS · Docker · Django REST Framework</p>
+        </div>
       </div>
 
     </div>
+
+    <!-- Optional arrows for manual scrolling -->
+    <div class="d-flex justify-content-center mt-3">
+      <button id="prevBtn" class="btn btn-outline-success me-2">&lt;</button>
+      <button id="nextBtn" class="btn btn-outline-success">&gt;</button>
+    </div>
+
   </div>
 </section>
+
 
 
 <!-- SKILLS -->

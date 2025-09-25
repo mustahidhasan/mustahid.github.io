@@ -105,42 +105,66 @@ header .btn {
 }
 
 
-/* === PROJECTS === */
-#projects {
-  background: #f1f5f9;
+/* Projects Horizontal Slider */
+.projects-slider {
+  scroll-behavior: smooth;
 }
 
-#projects h2 {
-  font-weight: 700;
+.project-card {
+  min-width: 280px; /* Minimum width per card */
+  max-width: 300px;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
 }
 
-.carousel-item img {
-  border-radius: 12px;
-  height: 350px;
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 30px rgba(0,0,0,0.2);
+}
+
+.project-img {
   width: 100%;
-  object-fit: contain;   /* ✅ show full image */
+  height: 180px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
 }
 
-.carousel-item h4 {
+.project-card:hover .project-img {
+  transform: scale(1.05);
+}
+
+.project-body {
+  padding: 15px 20px;
+}
+
+.project-body h4 {
+  font-size: 1.3rem;
+  font-weight: 700;
   margin-bottom: 10px;
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  filter: invert(1);
+.project-body p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: #555;
 }
 
-/* Carousel bullet indicators */
-.carousel-indicators [data-bs-target] {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: #94a3b8;
+.project-body p strong {
+  color: #10b981;
 }
 
-.carousel-indicators .active {
-  background-color: #10b981;
+/* Scrollbar hidden for modern look */
+.projects-slider::-webkit-scrollbar {
+  display: none;
 }
+.projects-slider {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
 
 /* === SKILLS === */
 #skills .progress {
