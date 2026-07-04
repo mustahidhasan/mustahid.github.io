@@ -469,43 +469,45 @@
     <div class="section-heading text-center">
       <p class="section-kicker">Contact</p>
     </div>
-    <div class="row g-4 align-items-stretch">
-      <div class="col-md-6">
-        <div class="card shadow-lg p-4 h-100 border-0 contact-card">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="card shadow-lg p-4 p-lg-5 h-100 border-0 contact-card contact-form-card">
+          <div class="contact-form-head">
+            <h3>Send a Message</h3>
+            <p>For product, platform, or full-stack engineering work, send a short note and I will get back to you by email.</p>
+          </div>
           <form>
             <div class="mb-4">
               <label for="message" class="form-label fw-semibold">Your Message</label>
-              <textarea id="message" rows="6" class="form-control form-control-lg" placeholder="Write your message..."></textarea>
+              <textarea id="message" rows="7" class="form-control form-control-lg" placeholder="Write your message..."></textarea>
             </div>
-            <button id="sendBtn" type="button" class="btn btn-success btn-lg w-100">Send Message</button>
+            <button id="sendBtn" type="button" class="btn btn-success btn-lg contact-submit-btn">Send Message</button>
           </form>
-        </div>
-      </div>
-
-      <div class="col-md-6">
-        <div class="card shadow-lg p-4 h-100 border-0 contact-card d-flex flex-column justify-content-center align-items-start">
-          <h5 class="mb-4">Get in Touch</h5>
-
-          <a href="mailto:mustahidhasan9@gmail.com" class="contact-item mb-3" aria-label="Email">
-            <div class="icon bg-success text-white rounded-circle d-flex align-items-center justify-content-center">
-              <i class="fas fa-envelope"></i>
-            </div>
-            <span class="contact-text">mustahidhasan9@gmail.com</span>
-          </a>
-
-          <div class="d-flex gap-3 mt-4">
-            <a href="https://github.com/mustahidhasan" target="_blank" rel="noreferrer" class="social-link modern" aria-label="GitHub">
-              <i class="fab fa-github fa-2x"></i>
-            </a>
-            <a href="https://linkedin.com/in/mustahid-hasan-8800851a9" target="_blank" rel="noreferrer" class="social-link modern" aria-label="LinkedIn">
-              <i class="fab fa-linkedin fa-2x"></i>
-            </a>
-          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+<aside class="contact-rail" aria-label="Quick contact links">
+  <div class="contact-rail-tab">
+    <i class="fas fa-paper-plane" aria-hidden="true"></i>
+  </div>
+  <div class="contact-rail-panel">
+    <a href="https://github.com/mustahidhasan" target="_blank" rel="noreferrer" class="contact-rail-link" aria-label="GitHub">
+      <i class="fab fa-github" aria-hidden="true"></i>
+      <span>GitHub</span>
+    </a>
+    <a href="mailto:mustahidhasan9@gmail.com" class="contact-rail-link" aria-label="Email">
+      <i class="fas fa-envelope" aria-hidden="true"></i>
+      <span>Gmail</span>
+    </a>
+    <a href="https://linkedin.com/in/mustahid-hasan-8800851a9" target="_blank" rel="noreferrer" class="contact-rail-link" aria-label="LinkedIn">
+      <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+      <span>LinkedIn</span>
+    </a>
+  </div>
+</aside>
 
 <footer class="text-center text-white py-3">
   <small>&copy; Mustahid Hasan | Full-Stack Engineer</small>
