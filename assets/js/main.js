@@ -78,4 +78,39 @@ document.addEventListener("DOMContentLoaded", () => {
         `mailto:mustahidhasan9@gmail.com?subject=Portfolio Inquiry&body=${encodeURIComponent(msg)}`;
     });
   }
+
+  /* === Copy Sidebar Email === */
+  const copyEmailBtn = $("#copyEmailBtn");
+  if (copyEmailBtn) {
+    copyEmailBtn.addEventListener("click", async (event) => {
+      event.preventDefault();
+      const email = copyEmailBtn.getAttribute("data-email") || "";
+      if (!email) return;
+
+      const setCopiedState = () => {
+        const label = copyEmailBtn.querySelector("span");
+        if (!label) return;
+        const original = label.textContent;
+        copyEmailBtn.classList.add("copied");
+        label.textContent = "Copied";
+        window.setTimeout(() => {
+          copyEmailBtn.classList.remove("copied");
+          label.textContent = original || "Gmail";
+        }, 1400);
+      };
+
+      try {
+        await navigator.clipboard.writeText(email);
+        setCopiedState();
+      } catch {
+        const input = document.createElement("input");
+        input.value = email;
+        document.body.appendChild(input);
+        input.select();
+        document.execCommand("copy");
+        document.body.removeChild(input);
+        setCopiedState();
+      }
+    });
+  }
 });
