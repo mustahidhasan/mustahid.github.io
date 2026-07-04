@@ -3,21 +3,20 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Mustahid Hasan — Portfolio</title>
-  <meta name="description" content="Mustahid Hasan — Backend Software Engineer (Node.js, TypeScript, Python, Django, React, AWS)">
+  <title>Mustahid Hasan | Full-Stack Engineer</title>
+  <meta
+    name="description"
+    content="Mustahid Hasan is a full-stack software engineer focused on Python, Node.js, TypeScript, backend systems, internal platforms, automation, and cloud delivery."
+  >
   <link rel="icon" href="data:;base64,iVBORw0KGgo=">
 
-  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <!-- Custom CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-<!-- NAVBAR -->
-<nav id="mainNav" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+<nav id="mainNav" class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
   <div class="container">
     <a class="navbar-brand fw-bold" href="#">MH</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -33,131 +32,319 @@
         <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         <li class="nav-item ms-2 d-none d-lg-block">
-          <a class="btn btn-outline-success" href="assets/files/Mustahid_Resume.pdf" download>Résumé</a>
+          <a class="btn btn-outline-success nav-resume-btn" href="assets/files/Mustahid_Resume.pdf" download>Resume</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
 
-<!-- HERO -->
-<header class="hero bg-dark text-white text-center py-5 mt-5">
+<header class="hero">
   <div class="container">
-    <img src="assets/imgs/mustahid_coat.jpg" alt="Profile Photo of Mustahid Hasan" class="rounded-circle mb-3 hero-img" loading="lazy">
-    <h1 class="fw-bold">Mustahid Hasan</h1>
-    <p class="lead">Backend Software Engineer — Node.js, TypeScript, Python, Django, React & AWS</p>
-    <div class="d-flex flex-column flex-sm-row justify-content-center gap-2 mt-3">
-      <a href="#projects" class="btn btn-success">See Projects</a>
-      <a href="assets/files/Mustahid_Resume.pdf" class="btn btn-outline-light" download>Download Resume</a>
-      <a href="mailto:mustahidhasan9@gmail.com" class="btn btn-outline-light">Email Me</a>
+    <div class="hero-shell">
+      <div class="hero-copy">
+        <p class="hero-kicker">Software Engineer</p>
+        <h1>Designing and shipping software that works.</h1>
+        <div class="hero-summary">
+          <span class="hero-summary-item">
+            <strong>Role</strong>
+            <em>Full-Stack Software Engineer</em>
+          </span>
+          <span class="hero-summary-item">
+            <strong>Stack</strong>
+            <em>Python, Node.js, TypeScript</em>
+          </span>
+          <span class="hero-summary-item">
+            <strong>Experience</strong>
+            <em>4+ Years</em>
+          </span>
+        </div>
+        <p class="hero-lead">
+          I build backend-first software systems that connect APIs, automation, dashboards, document workflows,
+          and cloud infrastructure into products teams can actually run and scale.
+        </p>
+        <div class="hero-badges">
+          <span>Backend systems</span>
+          <span>Automation workflows</span>
+          <span>Cloud delivery</span>
+        </div>
+        <div class="hero-actions d-flex flex-column flex-sm-row gap-2 mt-4">
+          <a href="#projects" class="btn btn-success btn-lg">View Projects</a>
+          <a href="assets/files/Mustahid_Resume.pdf" class="btn btn-outline-light btn-lg" download>Download Resume</a>
+        </div>
+        <div class="hero-mini-meta">
+          <span><i class="fas fa-location-dot" aria-hidden="true"></i> Dhaka, Bangladesh</span>
+          <a href="mailto:mustahidhasan9@gmail.com"><i class="fas fa-envelope" aria-hidden="true"></i> mustahidhasan9@gmail.com</a>
+          <a href="tel:+8801754627430"><i class="fas fa-phone" aria-hidden="true"></i> +8801754627430</a>
+        </div>
+      </div>
+
+      <div class="hero-profile">
+        <div class="hero-portrait-wrap">
+          <img src="assets/imgs/mustahid_coat.jpg" alt="Profile Photo of Mustahid Hasan" class="hero-img" loading="lazy">
+          <div class="hero-nameplate">
+            <h2>Mustahid Hasan</h2>
+            <p>Software Engineer</p>
+          </div>
+        </div>
+        <div class="hero-compact-panel">
+          <div class="hero-compact-item">
+            <strong>Experience</strong>
+            <span>4+ years building internal tools, platforms, and automation systems</span>
+          </div>
+          <div class="hero-compact-item">
+            <strong>Core Stack</strong>
+            <span>Python, Node.js, TypeScript, React, Django, FastAPI</span>
+          </div>
+          <div class="hero-compact-item">
+            <strong>Cloud & DevOps</strong>
+            <span>AWS, Docker, Cloudflare, CI/CD support, deployment workflows</span>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </header>
 
-<!-- ABOUT -->
 <section id="about" class="py-5">
   <div class="container">
-    <h2 class="mb-4 text-center">About Me</h2>
-    <div class="row justify-content-center">
-      <div class="col-md-10 col-lg-8">
-        <div class="card shadow-lg border-0 about-card p-4">
-          <div class="card-body">
-            <h3 class="card-title mb-2">Mustahid Hasan</h3>
-            <h6 class="card-subtitle mb-3 text-success">Backend Software Engineer — Node.js, TypeScript, Python, Django, React & AWS</h6>
-            <p class="card-text text-muted">
-              Backend Software Engineer with experience building internal platforms, REST APIs, automation systems, and cloud-based services.
-              I develop scalable backend services, improve engineering workflows, and support reliable delivery through automation, containerization, and production-focused system design.
+    <div class="section-heading">
+      <p class="section-kicker">About</p>
+      <h2>Full-stack delivery with backend depth</h2>
+    </div>
+    <div class="row g-4 align-items-stretch">
+      <div class="col-lg-7">
+        <div class="card shadow-lg border-0 about-card h-100">
+          <div class="card-body p-4 p-lg-5">
+            <p class="about-intro">
+              I am a full-stack software engineer with strong backend depth in Python, Node.js, and TypeScript.
+              My work is centered on internal platforms, REST APIs, automation systems, document pipelines,
+              AI-assisted products, and cloud-based services.
             </p>
-            <div class="d-flex flex-column flex-sm-row gap-2 mt-3">
-              <a href="assets/files/Mustahid_Resume.pdf" class="btn btn-success" download>Download Resume</a>
-              <a href="#contact" class="btn btn-outline-success">Contact Me</a>
+            <p class="mb-0 text-muted">
+              I have shipped CMS platforms, RAG systems, network monitoring tools, analytics workflows,
+              and document processors using Django, FastAPI, React, AWS, Docker, Cloudflare, PostgreSQL,
+              Redis, Prisma, Selenium, and LLM integrations. The common thread is practical product delivery
+              backed by reliable systems design.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-5">
+        <div class="stack-card h-100">
+          <h3>Primary Stack</h3>
+          <p class="stack-intro">
+            My primary stack covers backend engineering, full-stack product delivery, cloud infrastructure,
+            automation workflows, and production-ready application development.
+          </p>
+          <div class="stack-slider" aria-label="Primary stack technologies">
+            <div class="stack-track">
+              <span>Python</span>
+              <span>Node.js</span>
+              <span>TypeScript</span>
+              <span>Django</span>
+              <span>FastAPI</span>
+              <span>React</span>
+              <span>AWS</span>
+              <span>Docker</span>
+              <span>PostgreSQL</span>
+              <span>Redis</span>
+              <span>Cloudflare</span>
+              <span>Selenium</span>
+              <span>Prisma</span>
+              <span>GraphQL</span>
+              <span>tRPC</span>
+              <span>Vector DB</span>
+              <span>LLM Integrations</span>
+              <span>Shell Scripting</span>
+              <span aria-hidden="true">Python</span>
+              <span aria-hidden="true">Node.js</span>
+              <span aria-hidden="true">TypeScript</span>
+              <span aria-hidden="true">Django</span>
+              <span aria-hidden="true">FastAPI</span>
+              <span aria-hidden="true">React</span>
+              <span aria-hidden="true">AWS</span>
+              <span aria-hidden="true">Docker</span>
+              <span aria-hidden="true">PostgreSQL</span>
+              <span aria-hidden="true">Redis</span>
+              <span aria-hidden="true">Cloudflare</span>
+              <span aria-hidden="true">Selenium</span>
+              <span aria-hidden="true">Prisma</span>
+              <span aria-hidden="true">GraphQL</span>
+              <span aria-hidden="true">tRPC</span>
+              <span aria-hidden="true">Vector DB</span>
+              <span aria-hidden="true">LLM Integrations</span>
+              <span aria-hidden="true">Shell Scripting</span>
             </div>
           </div>
+          <a href="#contact" class="btn btn-success mt-4">Let's Work Together</a>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- PROJECTS -->
-<section id="projects" class="bg-light py-5">
+<section id="projects" class="py-5">
   <div class="container">
-    <h2 class="mb-5 text-center">Projects</h2>
-    <div class="projects-slider d-flex overflow-auto gap-4 pb-2">
-      
-      <!-- Card 1 -->
-      <article class="project-card flex-shrink-0 shadow-sm" role="article">
-        <img src="assets/imgs/automation.jpg" alt="Jira Automation screenshot" class="project-img" loading="lazy">
-        <div class="project-body">
-          <h4>Jira Automation</h4>
-          <p>Automated Jira issue creation, updates, sprint assignment, and formatting workflows from Google Sheets using API-driven integrations.</p>
-          <p><strong>Skills:</strong> Google Apps Script, Jira API, Gemini AI, Git</p>
-        </div>
-      </article>
-
-      <!-- Card 2 -->
-      <article class="project-card flex-shrink-0 shadow-sm" role="article">
-        <img src="assets/imgs/analysis.jpg" alt="Competitors Ads Analysis screenshot" class="project-img" loading="lazy">
-        <div class="project-body">
-          <h4>Competitors Ads Analysis AI</h4>
-          <p>AI-assisted analytics platform to collect competitor ad data, classify campaigns, and surface spend trends through interactive reporting.</p>
-          <p><strong>Skills:</strong> Python, Node.js, React, Selenium, GraphQL, Prisma, Pandas</p>
-        </div>
-      </article>
-
-      <!-- Card 3 -->
-      <article class="project-card flex-shrink-0 shadow-sm" role="article">
-        <img src="assets/imgs/network.jpg" alt="Network Management System screenshot" class="project-img" loading="lazy">
-        <div class="project-body">
-          <h4>Network Management System</h4>
-          <p>Backend-driven monitoring platform for large-scale network health checks across Ping, DNS, SNMP, and Traceroute workflows with Azure AD SSO and CSV export.</p>
-          <p><strong>Skills:</strong> Python, Node.js, React, AWS, Docker, Shell, Git</p>
-        </div>
-      </article>
-
-      <!-- Card 4 -->
-      <article class="project-card flex-shrink-0 shadow-sm" role="article">
-        <img src="assets/imgs/document.jpg" alt="Document Processor" class="project-img" loading="lazy">
-        <div class="project-body">
-          <h4>Document Processor</h4>
-          <p>Backend document workflow system for PDF upload, splitting, merging, and bulk processing with structured logging and timezone-aware processing.</p>
-          <p><strong>Skills:</strong> TypeScript, Node.js, Python, Django, Docker, AWS, Git</p>
-        </div>
-      </article>
-
-      <!-- Card 5 -->
-      <article class="project-card flex-shrink-0 shadow-sm" role="article">
-        <img src="assets/imgs/ai.jpg" alt="BC-Corporate CMS screenshot" class="project-img" loading="lazy">
-        <div class="project-body">
-          <h4>BC-Corporate CMS</h4>
-          <p>Multilingual CMS and admin platform for content, media, recruitment, and publishing workflows with SEO controls and role-based access.</p>
-          <p><strong>Skills:</strong> TypeScript, Node.js, tRPC, Cloudflare, Shell, Git</p>
-        </div>
-      </article>
-
+    <div class="section-heading">
+      <p class="section-kicker">Selected Work</p>
+      <h2>Projects</h2>
     </div>
 
-    <!-- Slider Controls -->
-    <div class="d-flex justify-content-center mt-3 gap-2">
-      <button id="prevBtn" class="btn btn-outline-success" aria-label="Previous projects">&lt;</button>
-      <button id="nextBtn" class="btn btn-outline-success" aria-label="Next projects">&gt;</button>
+    <div class="projects-slider d-flex overflow-auto gap-4 pb-2">
+      <article class="project-card flex-shrink-0 shadow-sm" role="article">
+        <img src="assets/imgs/project-cms-system.svg" alt="CMS System project" class="project-img" loading="lazy">
+        <div class="project-body">
+          <div class="project-tags"><span>TypeScript</span><span>Node.js</span><span>Cloudflare</span></div>
+          <h4>CMS System</h4>
+          <p>Built a CMS and admin platform for content, media, recruitment, and publishing workflows with SEO controls, preview flows, and secure role-based access.</p>
+          <div class="project-stack">
+            <strong>Stack</strong>
+            <span>TypeScript</span>
+            <span>Node.js</span>
+            <span>tRPC</span>
+            <span>Cloudflare</span>
+            <span>Python Scripts</span>
+            <span>Shell</span>
+            <span>Git</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card flex-shrink-0 shadow-sm" role="article">
+        <img src="assets/imgs/project-rag-system.svg" alt="RAG System project" class="project-img" loading="lazy">
+        <div class="project-body">
+          <div class="project-tags"><span>Python</span><span>TypeScript</span><span>LLM</span></div>
+          <h4>RAG System</h4>
+          <p>Built document ingestion, semantic search, context retrieval, and answer generation workflows with embeddings, vector storage, cache layers, and chat APIs.</p>
+          <div class="project-stack">
+            <strong>Stack</strong>
+            <span>Python</span>
+            <span>TypeScript</span>
+            <span>PostgreSQL</span>
+            <span>Redis</span>
+            <span>Vector DB</span>
+            <span>Docker</span>
+            <span>LLM Tooling</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card flex-shrink-0 shadow-sm" role="article">
+        <img src="assets/imgs/project-network-system.svg" alt="Network Management System project" class="project-img" loading="lazy">
+        <div class="project-body">
+          <div class="project-tags"><span>Python</span><span>Node.js</span><span>React</span></div>
+          <h4>Network Management System</h4>
+          <p>Developed a monitoring platform for large-scale Ping, DNS, SNMP, and Traceroute checks with Azure AD SSO, CSV export, and real-time dashboard visibility.</p>
+          <div class="project-stack">
+            <strong>Stack</strong>
+            <span>Python</span>
+            <span>Node.js</span>
+            <span>React</span>
+            <span>AWS</span>
+            <span>Docker</span>
+            <span>Shell</span>
+            <span>Git</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card flex-shrink-0 shadow-sm" role="article">
+        <img src="assets/imgs/project-ads-analytics.svg" alt="Competitors Ads Analysis AI project" class="project-img" loading="lazy">
+        <div class="project-body">
+          <div class="project-tags"><span>Python</span><span>Node.js</span><span>Analytics</span></div>
+          <h4>Competitors Ads Analysis AI</h4>
+          <p>Built an AI-assisted analytics platform to collect competitor ad data, classify campaigns, and surface spend trends through automation and dashboards.</p>
+          <div class="project-stack">
+            <strong>Stack</strong>
+            <span>Python</span>
+            <span>Node.js</span>
+            <span>React</span>
+            <span>Selenium</span>
+            <span>GraphQL</span>
+            <span>Prisma</span>
+            <span>Pandas</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card flex-shrink-0 shadow-sm" role="article">
+        <img src="assets/imgs/project-document-processor.svg" alt="Document Processor project" class="project-img" loading="lazy">
+        <div class="project-body">
+          <div class="project-tags"><span>TypeScript</span><span>Python</span><span>Django</span></div>
+          <h4>Document Processor</h4>
+          <p>Delivered a backend document workflow system for PDF upload, splitting, merging, and bulk processing with structured logging and timezone-aware execution.</p>
+          <div class="project-stack">
+            <strong>Stack</strong>
+            <span>TypeScript</span>
+            <span>Node.js</span>
+            <span>Python</span>
+            <span>Django</span>
+            <span>Docker</span>
+            <span>AWS</span>
+            <span>Git</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card flex-shrink-0 shadow-sm" role="article">
+        <img src="assets/imgs/project-jira-automation.svg" alt="Jira Automation project" class="project-img" loading="lazy">
+        <div class="project-body">
+          <div class="project-tags"><span>Automation</span><span>API</span><span>Productivity</span></div>
+          <h4>Jira Automation</h4>
+          <p>Automated Jira issue creation, updates, sprint assignment, and Markdown formatting from Google Sheets with AI-assisted translation support.</p>
+          <div class="project-stack">
+            <strong>Stack</strong>
+            <span>Google Apps Script</span>
+            <span>Jira API</span>
+            <span>Gemini AI</span>
+            <span>Git</span>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div class="project-controls">
+      <div class="project-controls-buttons">
+        <button id="prevBtn" class="project-nav-btn" aria-label="Previous projects">
+          <i class="fas fa-arrow-left" aria-hidden="true"></i>
+        </button>
+        <button id="nextBtn" class="project-nav-btn" aria-label="Next projects">
+          <i class="fas fa-arrow-right" aria-hidden="true"></i>
+        </button>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- SKILLS -->
-<section id="skills" class="py-5">
+<section id="skills" class="skills-section py-5">
   <div class="container">
-    <h2 class="mb-5 text-center">Skills</h2>
+    <div class="section-heading">
+      <p class="section-kicker">Capabilities</p>
+    </div>
+
     <div class="row g-4">
       <div class="col-12 col-md-6">
         <div class="skill">
           <div class="d-flex justify-content-between mb-1">
-            <span>Node.js / TypeScript / Python</span>
+            <span>Python Engineering</span>
+            <span class="skill-value">96%</span>
+          </div>
+          <div class="progress">
+            <div class="progress-bar bg-gradient-success" role="progressbar" style="width:0" aria-valuemin="0" aria-valuemax="100" data-value="96"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <div class="skill">
+          <div class="d-flex justify-content-between mb-1">
+            <span>Node.js and TypeScript Platforms</span>
             <span class="skill-value">95%</span>
           </div>
           <div class="progress">
-            <div class="progress-bar bg-gradient-success" role="progressbar" style="width:0" aria-valuemin="0" aria-valuemax="100" data-value="95"></div>
+            <div class="progress-bar bg-gradient-info" role="progressbar" style="width:0" data-value="95" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
         </div>
       </div>
@@ -165,11 +352,11 @@
       <div class="col-12 col-md-6">
         <div class="skill">
           <div class="d-flex justify-content-between mb-1">
-            <span>Django / DRF / FastAPI / REST APIs</span>
+            <span>Django, FastAPI, DRF, REST APIs</span>
             <span class="skill-value">92%</span>
           </div>
           <div class="progress">
-            <div class="progress-bar bg-gradient-info" role="progressbar" style="width:0" data-value="92" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="progress-bar bg-gradient-warning" role="progressbar" style="width:0" data-value="92" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
         </div>
       </div>
@@ -177,11 +364,11 @@
       <div class="col-12 col-md-6">
         <div class="skill">
           <div class="d-flex justify-content-between mb-1">
-            <span>React / JavaScript / Dashboard UI</span>
+            <span>React and Full-Stack UI Delivery</span>
             <span class="skill-value">88%</span>
           </div>
           <div class="progress">
-            <div class="progress-bar bg-gradient-warning" role="progressbar" style="width:0" data-value="88" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="progress-bar bg-gradient-primary" role="progressbar" style="width:0" data-value="88" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
         </div>
       </div>
@@ -189,11 +376,11 @@
       <div class="col-12 col-md-6">
         <div class="skill">
           <div class="d-flex justify-content-between mb-1">
-            <span>AWS / Docker / CI-CD / Cloudflare</span>
-            <span class="skill-value">86%</span>
+            <span>AWS, Docker, Cloudflare, CI/CD Support</span>
+            <span class="skill-value">87%</span>
           </div>
           <div class="progress">
-            <div class="progress-bar bg-gradient-primary" role="progressbar" style="width:0" data-value="86" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="progress-bar bg-gradient-danger" role="progressbar" style="width:0" data-value="87" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
         </div>
       </div>
@@ -201,93 +388,134 @@
       <div class="col-12 col-md-6">
         <div class="skill">
           <div class="d-flex justify-content-between mb-1">
-            <span>SQL / NoSQL / DynamoDB / Prisma</span>
-            <span class="skill-value">84%</span>
+            <span>PostgreSQL, Redis, DynamoDB, Prisma, Pandas</span>
+            <span class="skill-value">85%</span>
           </div>
           <div class="progress">
-            <div class="progress-bar bg-gradient-danger" role="progressbar" style="width:0" data-value="84" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="progress-bar bg-gradient-violet" role="progressbar" style="width:0" data-value="85" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
         </div>
       </div>
+    </div>
 
+    <div class="row g-4 mt-2">
+      <div class="col-lg-4">
+        <div class="skill-panel h-100">
+          <h3>Backend</h3>
+          <p>Python, Django, DRF, FastAPI, Node.js, TypeScript, REST APIs, GraphQL, tRPC, automation, microservices.</p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="skill-panel h-100">
+          <h3>Data and Integrations</h3>
+          <p>PostgreSQL, Redis, DynamoDB, Prisma, Vector DB, Pandas, Selenium, third-party APIs, LLM workflows.</p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="skill-panel h-100">
+          <h3>Cloud and Delivery</h3>
+          <p>AWS, Docker, Cloudflare, shell scripting, deployment automation, structured logging, reliability improvements.</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- EXPERIENCE -->
-<section id="experience" class="bg-light py-5">
+<section id="experience" class="py-5">
   <div class="container">
-    <h2 class="mb-4">Experience</h2>
+    <div class="section-heading">
+      <p class="section-kicker">Experience</p>
+    </div>
     <ul class="timeline list-unstyled">
       <li class="mb-4">
-        <h5>Software Engineer — Ninja Digital Innovations, Dhaka</h5>
-        <small class="text-muted">Jul 2025 – Present</small>
-        <p>Build and enhance internal platforms using Node.js, TypeScript, Python, Django, and React; design REST APIs and integration workflows; and improve reliability with AWS, Docker, Cloudflare, and Selenium.</p>
+        <h5>Software Engineer - Ninja Digital Innovations, Dhaka</h5>
+        <small class="text-muted">June 2025 - Present</small>
+        <p>Build internal platforms using Node.js, TypeScript, Python, Django, and React; design REST APIs, service workflows, and integration layers for automation and developer productivity; improve reliability with AWS, Docker, Cloudflare, and Selenium.</p>
+        <div class="experience-skills">
+          <strong>Primary Skills</strong>
+          <span>Python</span>
+          <span>Node.js</span>
+          <span>TypeScript</span>
+          <span>Django</span>
+          <span>React</span>
+          <span>AWS</span>
+          <span>Docker</span>
+          <span>Cloudflare</span>
+          <span>Selenium</span>
+        </div>
       </li>
 
       <li class="mb-4">
-        <h5>Software Engineer — Brandcloud, Tokyo (Remote)</h5>
-        <small class="text-muted">Apr 2023 – Jun 2025</small>
-        <p>Built internal tools and automation platforms, developed backend services and RESTful APIs for distributed teams, and supported engineering execution through workflow improvements and mentoring.</p>
+        <h5>Software Engineer - Brandcloud, Inc., Tokyo</h5>
+        <small class="text-muted">April 2023 - May 2025</small>
+        <p>Built internal tools and automation platforms, developed backend services and RESTful APIs for workflows and data processing, and contributed through code reviews, mentoring, and maintainable delivery across distributed teams.</p>
+        <div class="experience-skills">
+          <strong>Primary Skills</strong>
+          <span>Python</span>
+          <span>Node.js</span>
+          <span>TypeScript</span>
+          <span>Django</span>
+          <span>React</span>
+          <span>REST APIs</span>
+          <span>Automation Workflows</span>
+        </div>
       </li>
     </ul>
   </div>
 </section>
 
-<!-- CONTACT -->
-<section id="contact" class="py-5 bg-light">
+<section id="contact" class="py-5">
   <div class="container">
-    <h2 class="mb-5 text-center fw-bold">Contact Me</h2>
-    <div class="row g-4 align-items-stretch">
-      <div class="col-md-6">
-        <div class="card shadow-lg p-4 h-100 border-0">
+    <div class="section-heading text-center">
+      <p class="section-kicker">Contact</p>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="card shadow-lg p-4 p-lg-5 h-100 border-0 contact-card contact-form-card">
+          <div class="contact-form-head">
+            <h3>Send a Message</h3>
+            <p>For product, platform, or full-stack engineering work, send a short note and I will get back to you by email.</p>
+          </div>
           <form>
             <div class="mb-4">
               <label for="message" class="form-label fw-semibold">Your Message</label>
-              <textarea id="message" rows="6" class="form-control form-control-lg" placeholder="Write your message..."></textarea>
+              <textarea id="message" rows="7" class="form-control form-control-lg" placeholder="Write your message..."></textarea>
             </div>
-            <button id="sendBtn" type="button" class="btn btn-success btn-lg w-100">Send Message</button>
+            <button id="sendBtn" type="button" class="btn btn-success btn-lg contact-submit-btn">Send Message</button>
           </form>
-        </div>
-      </div>
-
-      <div class="col-md-6">
-        <div class="card shadow-lg p-4 h-100 border-0 d-flex flex-column justify-content-center align-items-start">
-          <h5 class="mb-4">Get in Touch</h5>
-
-          <a href="mailto:mustahidhasan9@gmail.com" class="contact-item mb-3" aria-label="Email">
-            <div class="icon bg-success text-white rounded-circle d-flex align-items-center justify-content-center">
-              <i class="fas fa-envelope"></i>
-            </div>
-            <span class="contact-text">mustahidhasan9@gmail.com</span>
-          </a>
-
-          <div class="d-flex gap-3 mt-4">
-            <a href="https://github.com/mustahidhasan" target="_blank" class="social-link modern" aria-label="GitHub">
-              <i class="fab fa-github fa-2x"></i>
-            </a>
-            <a href="https://linkedin.com/in/mustahid-hasan-8800851a9" target="_blank" class="social-link modern" aria-label="LinkedIn">
-              <i class="fab fa-linkedin fa-2x"></i>
-            </a>
-          </div>
-
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
-<footer class="bg-dark text-center text-white py-3">
-  <small>© Mustahid Hasan — Software Engineer</small>
+<aside class="contact-rail" aria-label="Quick contact links">
+  <div class="contact-rail-tab">
+    <i class="fas fa-paper-plane" aria-hidden="true"></i>
+  </div>
+  <div class="contact-rail-panel">
+    <a href="https://github.com/mustahidhasan" target="_blank" rel="noreferrer" class="contact-rail-link" aria-label="GitHub">
+      <i class="fab fa-github" aria-hidden="true"></i>
+      <span>GitHub</span>
+    </a>
+    <a href="#" class="contact-rail-link" id="copyEmailBtn" data-email="mustahidhasan9@gmail.com" aria-label="Copy email address">
+      <i class="fas fa-envelope" aria-hidden="true"></i>
+      <span>Gmail</span>
+    </a>
+    <a href="https://linkedin.com/in/mustahid-hasan-8800851a9" target="_blank" rel="noreferrer" class="contact-rail-link" aria-label="LinkedIn">
+      <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+      <span>LinkedIn</span>
+    </a>
+  </div>
+</aside>
+
+<footer class="text-center text-white py-3">
+  <small>&copy; Mustahid Hasan | Full-Stack Engineer</small>
 </footer>
 
-<!-- Back to Top -->
 <button id="backToTopBtn" title="Go to top" aria-label="Back to top">&#8679;</button>
 
-<!-- Bootstrap JS (bundle includes Popper) -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<!-- Custom JS -->
 <script src="assets/js/main.js"></script>
 </body>
 </html>
