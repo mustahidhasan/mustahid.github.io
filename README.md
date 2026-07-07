@@ -1,1 +1,1 @@
-# mustahid.github.io
+# Type Script
